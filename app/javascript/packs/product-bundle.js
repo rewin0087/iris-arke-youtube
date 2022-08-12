@@ -1,7 +1,7 @@
 import ReactOnRails from 'react-on-rails';
 
-import Product from '../bundles/Product/components/Product';
+import Products from '../bundles/Product/components/Products';
 
 ReactOnRails.register({
-  Product,
+  Products,
 });

@@ -52,24 +52,26 @@ export default class Product extends React.Component {
     const { innerHeight, innerWidth } = window;
 
     return (
-      <div className="product-container">
-        <h2>
-          <span>{product.name}</span>
-          <a href="#" className="toggle-details" onClick={this.togglePopup}>Show Details</a>
-        </h2>
+      <div className="product-item">
+        <div className="product-container">
+          <h2>
+            <span>{product.name}</span>
+            <a href="#" className="toggle-details" onClick={this.togglePopup}>Show Details</a>
+          </h2>
 
-        <YouTube
-          title={product.name}
-          videoId={product.youtube_id}
-          opts={{ height: innerHeight, width: innerWidth }}
-          onReady={ e => this.setPlayer(e.target) }
-          onPlay={this.showPopup}
-        />
+          <YouTube
+            title={product.name}
+            videoId={product.youtube_id}
+            opts={{ height: innerHeight, width: innerWidth }}
+            onReady={ e => this.setPlayer(e.target) }
+            onPlay={this.showPopup}
+          />
 
-        {
-          showOverlay &&
-          <ProductDetail product={product} closePopup={this.togglePopup} />
-        }
+          {
+            showOverlay &&
+            <ProductDetail product={product} closePopup={this.togglePopup} />
+          }
+      </div>
     </div>
     );
   }

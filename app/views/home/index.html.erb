@@ -1,7 +1,1 @@
-<div class="product-list">
-  <% @products.each do |product| %>
-    <div class="product-item">
-      <%= react_component("Product", props: { product: product }, prerender: false) %>
-    </div>
-  <% end %>
-</div>
+<%= react_component("Products", prerender: false) %>
