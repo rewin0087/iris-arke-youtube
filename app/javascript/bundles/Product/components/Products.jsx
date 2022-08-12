@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 import Product from './Product';
 
@@ -35,9 +34,5 @@ class Products extends React.Component {
     );
   }
 }
-
-Products.propTypes = {
-  products: PropTypes.array.isRequired
-};
 
 export default Products;

@@ -44,7 +44,7 @@ Install npm packages
 npm install
 ```
 
-Run rails app
+Run rails app and visit http://localhost:3000
 
 ```
 rails s
