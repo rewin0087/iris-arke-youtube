@@ -17,6 +17,7 @@ const ProductDetail = ({product, closePopup}) => {
             <span>[{product.kind}]</span>
           </h3>
           <p>{product.description}</p>
+          <button>{product.button_text}</button>
         </div>
       </div>
     </div>

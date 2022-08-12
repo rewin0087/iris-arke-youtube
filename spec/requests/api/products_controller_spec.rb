@@ -13,7 +13,8 @@ RSpec.describe "Products", type: :request do
           youtube_id: product.youtube_id,
           image: { url: nil },
           kind: product.kind,
-          timecode: product.timecode
+          timecode: product.timecode,
+          button_text: product.button_text
         }
       ]
     end

@@ -7,6 +7,7 @@ class CreateProducts < ActiveRecord::Migration[6.1]
       t.string :youtube_id
       t.string :image
       t.string :kind, default: 'standard'
+      t.string :button_text
       t.integer :timecode, default: 0
 
       t.timestamps

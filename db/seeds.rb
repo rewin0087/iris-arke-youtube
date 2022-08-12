@@ -6,7 +6,8 @@ products = [
     image: File.new(File.join(Rails.root, 'db/seed_data_files/arceus.png')),
     youtube_url: 'https://www.youtube.com/watch?v=I4RynqpahT8',
     youtube_id: 'I4RynqpahT8',
-    timecode: 10
+    timecode: 10,
+    button_text: 'Play Now'
   },
   {
     name: 'God of War Ragnarök',
@@ -14,7 +15,8 @@ products = [
     image: File.new(File.join(Rails.root, 'db/seed_data_files/godofwar.png')),
     youtube_url: 'https://www.youtube.com/watch?v=ZoT4Q56ryos',
     youtube_id: 'ZoT4Q56ryos',
-    timecode: 20
+    timecode: 20,
+    button_text: 'Buy Now'
   }
 ]
 

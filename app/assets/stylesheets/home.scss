@@ -78,8 +78,15 @@ body {
                 }
               }
 
-              p {
+              p, button {
                 margin-left: 1em;
+              }
+
+              button {
+                padding: 0.5em 1em;
+                border-radius: 5px;
+                background: #f1f1f1;
+                border: 1px solid #d1d1d1;
               }
             }
           }
