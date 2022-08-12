@@ -1,3 +1,90 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  margin: 0;
+  padding: 0;
+
+  .product-list {
+    .product-item {
+      margin-bottom: 1em;
+
+      h2 {
+        background: #f9f9f9;
+        margin: 0;
+        padding: 1em;
+        border-top: 1px solid #ddd;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          color: #000;
+          font-size: 14px;
+        }
+      }
+
+      .product-container {
+        position: relative;
+
+        .product-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background: rgba(255,255,255,0.5);
+          z-index: 1;
+
+          .toggle-overlay {
+            float: right;
+            font-size: 3em;
+            margin-right: 10px;
+            margin-top: 2em;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          .product-detail {
+            margin: 10%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+
+            .preview {
+              width: 30%;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .info {
+              width: 70%;
+
+              h3 {
+                margin-left: 1em;
+
+                a {
+                  color: #000;
+                }
+
+                span {
+                  margin-left: 10px;
+                  background: #0d6efd;
+                  color: #fff;
+                  padding: 3px;
+                  border-radius: 5px;
+                  font-size: 15px;
+                }
+              }
+
+              p {
+                margin-left: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
